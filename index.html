@@ -19,14 +19,15 @@
     />
 
     <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./test.scss"/> -->
   </head>
 
   <body class="body">
 
     <!-- Mobile modal -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal-mobile>
       <div class="modal-mobile">
-        <button data-modal-close class="close-modal">
+        <button data-modal-mobile-close class="close-modal">
           <svg class="modal-close-icon">
             <use href="./images/icons.svg#icon-cross"></use>
           </svg>
@@ -55,7 +56,7 @@
           </li>
         </ul>
 
-        <ul>
+        <ul class="modal-icons-socials">
           <li>
             <a href="">
               <svg class="team-media-icons">
@@ -96,7 +97,12 @@
     <!-- header -->
     <header class="header">
 
-      <button type="button" data-modal-open>tets</button>
+      <button type="button" data-modal-mobile-open class="mobile-button">
+        <svg class="open-mobile-modal">
+          <use href="./images/icons.svg#icon-open-mobile"></use>
+        </svg>
+      </button>
+      
       <div class="container">
         <nav class="header-navigation">
           <a class="webstudio" href="./index.html"
@@ -136,7 +142,8 @@
     <main class="main">
       <section class="hero-image">
         <div class="container">
-          <h1 class="main-banner">Effective Solutions for Your Business</h1>
+          <h1 class="main-banner">Effective Solutions<br>
+             for Your Business</h1>
           <button class="button-order" type="button" data-modal-open>
             Order Service
           </button>
@@ -157,9 +164,7 @@
               <h3 class="features-header">Strategy</h3>
               <p class="features-text">
                 Our goal is to identify the business problem to walk away with
-                the
-                <br />
-                perfect and creative solution.
+                the perfect and creative solution.
               </p>
             </li>
             <li class="features-list-item">
@@ -221,7 +226,7 @@
       </section>
 
       <!-- Team -->
-      <section class="team-background">
+      <section class="team">
         <div class="container">
           <h2 class="our-team-header">Our Team</h2>
           <ul class="team-list">
@@ -376,6 +381,8 @@
           </ul>
         </div>
       </section>
+
+      <!-- Customers -->
       <section class="customers">
         <div class="container">
           <h2 class="customers-header">Customers</h2>
