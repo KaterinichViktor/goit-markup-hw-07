@@ -25,9 +25,9 @@
   <body class="body">
 
     <!-- Mobile modal -->
-    <div class="backdrop is-hidden" data-modal-mobile>
+    <div class="backdrop-mobile js-menu-container">
       <div class="modal-mobile">
-        <button data-modal-mobile-close class="close-modal">
+        <button class="close-modal js-close-menu">
           <svg class="modal-close-icon">
             <use href="./images/icons.svg#icon-cross"></use>
           </svg>
@@ -40,17 +40,17 @@
             <a class="contacts-list-item" href="./portfolio.html">Portfolio</a>
           </li>
           <li>
-            <a class="contacts-list-item" href="">Contacts</a>
+            <a class="contacts-list-item-colored" href="">Contacts</a>
           </li>
         </ul>
         <ul class="modal-contacts">
           <li>
-            <a class="modal-email" href="tel:+110001111111"
+            <a class="modal-number" href="tel:+110001111111"
               >+11 (000) 111-11-11</a
             >
           </li>
           <li>
-            <a class="modal-number" href="mailto:info@devstudio.com"
+            <a class="modal-email" href="mailto:info@devstudio.com"
               >info@devstudio.com
             </a>
           </li>
@@ -97,7 +97,7 @@
     <!-- header -->
     <header class="header">
 
-      <button type="button" data-modal-mobile-open class="mobile-button">
+      <button type="button"  class="mobile-button js-open-menu">
         <svg class="open-mobile-modal">
           <use href="./images/icons.svg#icon-open-mobile"></use>
         </svg>
@@ -231,7 +231,13 @@
           <h2 class="our-team-header">Our Team</h2>
           <ul class="team-list">
             <li class="team-list-item">
-              <img src="./images/image4.jpg" alt="Mark Guerrero" width="264" />
+              <!-- <img src="./images/image4.jpg" alt="Mark Guerrero" width="264" /> -->
+              <img
+                srcset="./images/image4.jpg 264w, ./images/image4@2x.jpg 528w"
+                sizes="264px"
+                src="./images/image4.jpg"
+                alt="Mark Guerrero"
+              />
               <div class="team-name-job">
                 <h3 class="team-list-item-header">Mark Guerrero</h3>
                 <p class="team-list-text">Product Designer</p>
@@ -268,7 +274,13 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img src="./images/image5.jpg" alt="Tom Ford" width="264" />
+              <!-- <img src="./images/image5.jpg" alt="Tom Ford" width="264" /> -->
+              <img
+                srcset="./images/image5.jpg 264w, ./images/image5@2x.jpg 528w"
+                sizes="264px"
+                src="./images/image5.jpg"
+                alt="Tom Ford"
+              />
               <div class="team-name-job">
                 <h3 class="team-list-item-header">Tom Ford</h3>
                 <p class="team-list-text">Frontend Developer</p>
@@ -305,7 +317,13 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img src="./images/image6.jpg" alt="Camila Garcia" width="264" />
+              <!-- <img src="./images/image6.jpg" alt="Camila Garcia" width="264" /> -->
+              <img
+                srcset="./images/image6.jpg 264w, ./images/image6@2x.jpg 528w"
+                sizes="264px"
+                src="./images/image6.jpg"
+                alt="Camila Garcia"
+              />
               <div class="team-name-job">
                 <h3 class="team-list-item-header">Camila Garcia</h3>
                 <p class="team-list-text">Marketing</p>
@@ -342,7 +360,13 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img src="./images/image7.jpg" alt="Daniel Wilson" width="264" />
+              <!-- <img src="./images/image7.jpg" alt="Daniel Wilson" width="264" /> -->
+              <img
+                srcset="./images/image7.jpg 264w, ./images/image7@2x.jpg 528w"
+                sizes="264px"
+                src="./images/image7.jpg"
+                alt="Daniel Wilson"
+              />
               <div class="team-name-job">
                 <h3 class="team-list-item-header">Daniel Wilson</h3>
                 <p class="team-list-text">UI Designer</p>
@@ -581,6 +605,7 @@
 
       document.body.style.paddingTop = `${pageHeaderHeight}px`;
     </script> -->
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
