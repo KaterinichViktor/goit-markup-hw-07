@@ -739,8 +739,10 @@ address{
   transform: translate(-50%, -50%) scale(1) rotate(360deg);
 
   padding: 72px 24px 24px 24px;
-  width: 408px;
-  height: 584px;
+  width: 100%;
+  max-width: 408px;
+  height: 100%;
+  max-height: 584px;
   background-color: var(--modal);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -801,7 +803,9 @@ address{
 .registration-form input{
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  width: 360px;
+ 
+  max-width: 360px;
+  width: 100%;
   height: 40px; 
   padding-left: 38px;
   margin: 0;
@@ -827,7 +831,8 @@ address{
 }
 
 .textarea{
-  width: 360px;
+  width: 100%;
+  max-width: 360px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -878,7 +883,6 @@ textarea::placeholder{
 
 .checkbox-label{
   position: relative;
-  display: block;
   padding: 0;
   margin: 0;
   width: 360px;
@@ -972,15 +976,10 @@ textarea::placeholder{
 /* Modal Mobile */
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIi */
 .modal-mobile{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1) rotate(360deg);
-
+  display: flex;
+  flex-direction: column;
   padding: 80px 40px 40px 40px;
   width: 100%;
-  /* max-width: 480px;
-  max-height: 796px; */
   height: 100%;
   background-color: var(--modal);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1027,7 +1026,7 @@ textarea::placeholder{
   background-color: var(--pressed-state);
 }
 
-.modal-icons-socials{
+.modal-icons-socials li{
   display: flex;
   justify-self: center;
   gap: 24px;
@@ -1038,6 +1037,7 @@ textarea::placeholder{
   display: flex;
   flex-direction: column;
   gap: 40px;
+  margin-bottom: auto;
 }
 .contacts-list a,
 .modal-number{
@@ -1049,7 +1049,6 @@ textarea::placeholder{
   color: var(--dark);
 }
 .modal-contacts{
-  margin-top: 284px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -1069,7 +1068,6 @@ textarea::placeholder{
   margin-top: 48px;
   gap: 56px;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
 }
 .header{
@@ -1114,7 +1112,7 @@ fill: #404BBF;
     ), url("../images/background@2x.jpg");
   }
 }
-@media (max-width:320px){
+/* @media (max-width:320px){
   .modal-mobile,
   .backdrop-mobile{
     position: absolute;
@@ -1129,7 +1127,7 @@ fill: #404BBF;
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
-}
+} */
 /* Media */
 /* IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
 
