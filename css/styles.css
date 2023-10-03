@@ -533,6 +533,9 @@ address{
 .subscribe{
   display: flex;
 }
+subscribe::placeholder{
+  color: red;
+}
 
 .subscribe input{
   margin-top: 16px;
