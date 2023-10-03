@@ -533,7 +533,7 @@ address{
 .subscribe{
   display: flex;
 }
-subscribe::placeholder{
+.subscribe input::placeholder{
   color: red;
 }
 
